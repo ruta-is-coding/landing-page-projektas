@@ -15,6 +15,16 @@ header {
   margin: 0 auto;
   padding: 0;
 }
+img {
+  max-width: 100%;
+}
+p {
+  line-height: 1.7;
+}
+header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 header .container {
   display: flex;
   justify-content: space-between;
@@ -41,14 +51,81 @@ nav ul a:hover {
   color: #1ce1ac;
 }
 main {
-  padding-top: 100px;
+  padding-top: 200px;
 }
-.home .col-6 img {
-  max-width: 100%;
+#home {
+  padding-bottom: 50px;
 }
-.home h1 {
+#home .green {
+  color: #1ce1ac;
+}
+#home h1 {
   color: #343a40;
   font-size: 60px;
+  line-height: 1.25;
   font-weight: 700;
-  margin: 0;
+  margin-top: 30px;
+  font-family: 'Martel Sans', sans-serif;
+}
+#home p {
+  color: #6c757d;
+  font-size: 18px;
+}
+#home .discount {
+  background-color: #f8f9fa;
+  border: 1px solid #eceff2;
+  padding: 2px 15px;
+  color: #6c757d;
+  border-radius: 3px;
+  padding: 1px 15px;
+}
+.buttons {
+  display: flex;
+  gap: 15px;
+  font-size: 16px;
+}
+.buttons a {
+  text-decoration: none;
+  padding: 5px 20px;
+}
+.buttons a:first-child {
+  background: linear-gradient(
+    to right,
+    #1ce1ac 0%,
+    #8cf1d6 100%
+  );
+  color: #fff;
+  margin-left: 20px;
+}
+.buttons a:last-child {
+  color: #536976;
+}
+.logos {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 70px;
+}
+.logos img {
+  height: 38px;
+}
+#about {
+  padding-top: 80px;
+  background-color: #f8f9fa;
+}
+#about h6 {
+  color: #6c757d;
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  text-align: center;
+}
+#about h2 {
+  font-weight: 700;
+  font-size: 30px;
+  margin-top: 18px;
+  line-height: 1.3;
+  text-align: center;
 }

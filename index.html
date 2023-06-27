@@ -10,6 +10,10 @@
       Dojek - Responsive Bootstrap 5 Landing Page
       Template
     </title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="col.css" />
     <link
@@ -25,34 +29,62 @@
       href="https://fonts.googleapis.com/css2?family=Mandali&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- header -->
     <header>
+      <!-- Logo -->
       <div class="container">
         <div class="logo">
-          <img
-            src="logos, icons/logo-dark.png"
-            alt="Dojek logo"
-          />
+          <a href="#">
+            <img
+              src="logos, icons/logo-dark.png"
+              alt="Dojek logo"
+            />
+          </a>
         </div>
+        <!-- Navigacija -->
         <nav>
           <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Projects</a></li>
-            <li><a href="">Testimonial</a></li>
-            <li><a href="">Team</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li>
+              <a href="#projects">Projects</a>
+            </li>
+            <li>
+              <a href="#testimonial"
+                >Testimonial</a
+              >
+            </li>
+            <li><a href="#team">Team</a></li>
           </ul>
         </nav>
       </div>
     </header>
     <main>
       <!-- section 1 -->
-      <section class="home">
+      <section id="home">
+        <!-- Text -->
         <div class="container">
           <div class="row">
             <div class="col-6">
+              <span class="discount">
+                <span class="green">70% off</span>
+                for first 3 months
+              </span>
               <h1>
                 Digital Agency with Excellence
                 Services
@@ -62,7 +94,18 @@
                 voluptas sit aspernatur aut odit
                 aut fugit sed quia consequuntur.
               </p>
+              <div class="buttons">
+                <a href="#"
+                  >More about us
+                  <i class="bi bi-caret-right"></i
+                ></a>
+                <a href="#"
+                  >See live demo
+                  <i class="bi bi-play-circle"></i
+                ></a>
+              </div>
             </div>
+            <!-- Image -->
             <div class="col-6">
               <img
                 src="images/hero-img.png"
@@ -70,9 +113,40 @@
               />
             </div>
           </div>
+          <div class="logos">
+            <img
+              src="logos, icons/dribbble.png"
+              alt="dribble"
+            />
+            <img
+              src="logos, icons/envato.png"
+              alt="envato"
+            />
+            <img
+              src="logos, icons/insta.png"
+              alt="Instagram"
+            />
+            <img
+              src="logos, icons/bootstrap.png"
+              alt="Bootstrap"
+            />
+            <img
+              src="logos, icons/jquery.png"
+              alt="jquery"
+            />
+          </div>
         </div>
       </section>
       <!-- section2 -->
+      <section id="about">
+        <div class="container">
+          <h6>What We Do</h6>
+          <h2>
+            The things that motivate me is a
+            common form of motivation.
+          </h2>
+        </div>
+      </section>
     </main>
     <footer></footer>
   </body>
