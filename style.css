@@ -160,10 +160,35 @@ h2 {
 #projects ul {
   display: flex;
   justify-content: space-between;
-  gap: 30px;
+  gap: 15px;
   list-style-type: none;
 }
 #projects ul a {
   display: block;
   text-decoration: none;
+}
+#projects ul li:first-child {
+  background-color: #1ce1ac;
+  color: #fff;
+}
+#projects ul li a {
+  color: #6c757d;
+  background-color: #f8f9fa;
+  padding: 3px 15px;
+  border-radius: 10%;
+}
+#projects ul li a:hover {
+  background-color: #eff1f5;
+}
+#projects .active {
+  background-color: #1ce1ac;
+  color: white;
+  box-shadow: 0px 8px 12px 0px
+    rgba(28, 225, 172, 0.25);
+}
+#projects .active:hover {
+  background-color: #1ce1ac;
+}
+#testimonial {
+  background-color: rgba(255, 194, 18, 0.25);
 }
