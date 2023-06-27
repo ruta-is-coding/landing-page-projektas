@@ -43,11 +43,12 @@ nav ul a:hover {
 main {
   padding-top: 100px;
 }
+.home .col-6 img {
+  max-width: 100%;
+}
 .home h1 {
   color: #343a40;
   font-size: 60px;
   font-weight: 700;
-}
-.home img {
-  width: 996px;
+  margin: 0;
 }
