@@ -1,7 +1,6 @@
 .row {
   display: flex;
   gap: 30px;
-  margin-bottom: 30px;
 }
 .col-1 {
   width: 8.333333333333333%;
