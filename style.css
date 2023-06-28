@@ -29,7 +29,6 @@ p {
 }
 header {
   position: fixed;
-  z-index: 100;
   width: 100%;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -72,13 +71,12 @@ nav .active::after {
   left: calc((100% - 60%) / 2);
   background-color: #1ce1ac;
 }
-main {
-  padding-top: 200px;
-}
 #home {
+  padding-top: 200px;
   padding-bottom: 80px;
   background-image: url(background/hero-bg.png);
   width: 100%;
+  background-size: cover;
 }
 #home .green {
   color: #1ce1ac;
@@ -127,10 +125,11 @@ main {
 }
 #home .buttons a:last-child {
   color: #536976;
+  display: flex;
 }
 .bi-play-circle::before {
   font-size: 30px;
-  padding-left: 3px;
+  padding-left: 0.5rem;
 }
 .logos {
   display: flex;
@@ -183,10 +182,6 @@ h2 {
 }
 #projects ul a {
   display: block;
-}
-#projects ul li:first-child {
-  background-color: #1ce1ac;
-  color: #fff;
 }
 #projects ul li a {
   color: #6c757d;
