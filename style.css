@@ -399,7 +399,6 @@ footer .col-9 ul li a::before {
 }
 footer .col-9 ul li a:hover::before {
   content: '';
-  content: '';
   width: 7px;
   height: 7px;
   border-radius: 50%;
