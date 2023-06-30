@@ -396,6 +396,7 @@ p {
 footer {
   padding-top: 100px;
   background-color: #f8f9fa;
+  padding-bottom: 100px;
 }
 footer .container {
   position: relative;
