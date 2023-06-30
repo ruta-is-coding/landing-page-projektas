@@ -370,21 +370,52 @@ footer .container {
   position: relative;
   padding-top: 100px;
   display: flex;
-  justify-content: space-between;
   background-image: url(background/footer-light-bg.png);
   background-position: center center;
   background-repeat: no-repeat;
+}
+footer .row {
+  gap: 0;
+  width: 100%;
 }
 footer ul {
   list-style-type: none;
 }
 footer ul li a {
+  color: #6c757d;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+footer ul li a::before {
+  content: '';
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #1ce1ac;
+  position: absolute;
+  left: -15px;
+  opacity: 0;
+}
+footer ul li a:hover::before {
+  content: '';
+  content: '';
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #1ce1ac;
+  position: absolute;
+  left: -15px;
+  opacity: 1;
+}
+footer ul li a:hover {
   color: #343a40;
+  margin-left: 10px;
 }
 footer h5 {
   margin-bottom: 30px;
   line-height: 1.2;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 600;
 }
 footer img {
