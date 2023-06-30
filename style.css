@@ -387,7 +387,7 @@ footer ul li a {
   align-items: center;
   position: relative;
 }
-footer ul li a::before {
+footer .col-9 ul li a::before {
   content: '';
   width: 7px;
   height: 7px;
@@ -397,7 +397,7 @@ footer ul li a::before {
   left: -15px;
   opacity: 0;
 }
-footer ul li a:hover::before {
+footer .col-9 ul li a:hover::before {
   content: '';
   content: '';
   width: 7px;
@@ -410,6 +410,8 @@ footer ul li a:hover::before {
 }
 footer ul li a:hover {
   color: #343a40;
+}
+footer .col-9 ul li a:hover {
   margin-left: 10px;
 }
 footer h5 {
