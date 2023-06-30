@@ -57,15 +57,21 @@ nav ul a {
   font-weight: 500;
   line-height: 26px;
   padding: 6px 0;
+  position: relative;
+  font-size: 18px;
 }
 nav ul a:hover {
   color: #1ce1ac;
+  transition: all 0.3s ease-in-out;
 }
-nav .active {
+nav ul a:active {
+  color: #1ce1ac;
+}
+.active {
   color: #1ce1ac;
   position: relative;
 }
-nav .active::after {
+.active::after {
   content: '';
   height: 2px;
   width: 60%;
@@ -74,8 +80,14 @@ nav .active::after {
   left: calc((100% - 60%) / 2);
   background-color: #1ce1ac;
 }
-nav ul a:focus {
-  color: #1ce1ac;
+nav ul a:active::after {
+  content: '';
+  height: 2px;
+  width: 60%;
+  position: absolute;
+  bottom: 0;
+  left: calc((100% - 60%) / 2);
+  background-color: #1ce1ac;
 }
 #home {
   padding-top: 200px;
@@ -225,10 +237,11 @@ h2 {
   border: none;
   color: #6c757d;
   background-color: #f8f9fa;
-  padding: 0.7rem 1.5rem;
+  padding: 10px 18px;
   border-radius: 5px;
   max-height: 44px;
   cursor: pointer;
+  font-size: 18px;
 }
 #projects button:hover {
   background-color: #eff1f5;
@@ -387,16 +400,7 @@ footer ul li a {
   align-items: center;
   position: relative;
 }
-footer .col-9 ul li a::before {
-  content: '';
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background-color: #1ce1ac;
-  position: absolute;
-  left: -15px;
-  opacity: 0;
-}
+
 footer .col-9 ul li a:hover::before {
   content: '';
   width: 7px;
@@ -406,12 +410,13 @@ footer .col-9 ul li a:hover::before {
   position: absolute;
   left: -15px;
   opacity: 1;
+  transition: all 0.3s ease-in-out;
 }
 footer ul li a:hover {
   color: #343a40;
 }
 footer .col-9 ul li a:hover {
-  margin-left: 10px;
+  margin-left: 20px;
 }
 footer h5 {
   margin-bottom: 30px;
