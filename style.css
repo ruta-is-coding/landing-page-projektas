@@ -457,6 +457,7 @@ footer img {
   display: flex;
   align-items: center;
   color: white;
+  border-radius: 3px;
 }
 .subscribe h3 {
   font-size: 26px;
